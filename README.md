@@ -12,11 +12,11 @@ Using 2,133 pop-up events, this project found that **revenue depended on product
 
 ## 1. Goal
 
-As K-beauty brands open more pop-up stores, choosing where to open them has become a key decision, and busy locations usually come with higher rent. This project asked:
+As K-beauty pop-up stores become more common, choosing the right location has become increasingly important. Locations with higher foot traffic also tend to have higher rental costs. This project asked:
 
-1. Do locations with more foot traffic bring in more revenue, or more revenue per visitor?
-2. Does the type of event (for example, a flash event or a mall kiosk) change sales results?
-3. Once other factors are held constant, what drives revenue?
+1. Do locations with higher foot traffic actually generate more revenue or higher revenue per visitor (RPV)?
+2. Does the type of event (e.g., a flash event or a mall kiosk) affect sales performance?
+3. After controlling for other factors, what actually drives revenue?
 
 ## 2. Data
 
