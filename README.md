@@ -75,7 +75,9 @@ In ANOVA and regression, p < 0.05 means a difference is unlikely to be due to ch
 
 High-Street drew **2.04 times** the footfall of Art/Design District (1,880 vs. 920 visitors per day) but earned about 10% less ($187,232 vs. $208,104). Since revenue did not differ by location, the RPV gap ($3.63 vs. $9.92) came from footfall alone.
 
-![Footfall, revenue and RPV by location](figures/fig1_location_footfall_revenue.png)
+<p align="center">
+  <img src="figures/fig1_location_footfall_revenue.png" alt="Footfall, revenue and RPV by location" width="800">
+</p>
 
 ### High traffic did not mean high revenue
 
@@ -89,7 +91,9 @@ Note: revenue is price × units sold, so part of price's effect is built into th
 
 Flash events (75.3%) and mobile trucks (75.9%) sold more of their stock than mall kiosks and shop-in-shops (71.2%). Flash events beat mall kiosks by **4.1 percentage points**. Revenue did not differ by event type (p = 0.247), and units sold stayed within a narrow range (1,840–2,038).
 
-![Sell-through and revenue by event type](figures/fig2_event_type.png)
+<p align="center">
+  <img src="figures/fig2_event_type.png" alt="Sell-through and revenue by event type" width="700">
+</p>
 
 ### The "best combination" ranking was not reliable
 
