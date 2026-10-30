@@ -95,7 +95,9 @@ Flash events (75.3%) and mobile trucks (75.9%) sold more of their stock than mal
 
 The location × event type interaction was not significant (p = 0.097). The top combination had a mean RPV of $14.06, but its 95% confidence interval was wide ($5.82–$22.31) and overlapped with other combinations, so its first place cannot be trusted.
 
-![RPV by location × event type with 95% CI width="500"](figures/fig3_combo_rpv_ci.png)
+<p align="center">
+  <img src="figures/fig3_combo_rpv_ci.png" alt="RPV by location × event type with 95% CI" width="500">
+</p>
 
 ## 6. From Analysis to Decision
 
