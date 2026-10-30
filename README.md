@@ -46,16 +46,16 @@ Step 5 shows that `lease_length_days` equals the event duration, which is why to
 [`popup_analysis_basic.py`](popup_analysis_basic.py) runs all tests and saves the figures.
 
 **Derived variables (in the analysis script)**
-- **RPV (revenue per visitor)** = revenue ÷ (average daily footfall × lease days). It counts everyone who visited, not only buyers.
+- **RPV (revenue per visitor)** = revenue ÷ (average daily footfall × lease days). It measures average revenue per visitor, including non-buyers, and helps compare revenue generation across locations.
 - **Season** from the start month (used as a control variable in the regression).
 
 | Step | Method | Question |
 |---|---|---|
-| 1 | Pearson correlation | Does revenue rise with footfall? |
-| 2 | One-way ANOVA | Do footfall, revenue, RPV and sell-through differ by location or event type? |
-| 3 | Two-way ANOVA | Do some location × event type combinations have a special effect? |
-| 4 | Multiple regression | Holding other variables fixed, what drives revenue? |
-| 5 | 95% confidence intervals | Can the RPV ranking of combinations be trusted? |
+| 1 | Pearson correlation | Do footfall and revenue move together? |
+| 2 | One-way ANOVA | Do average footfall, revenue and sell-through really differ across location types and event types, or could the gaps be due to chance? |
+| 3 | Two-way ANOVA | Do some location and event type combinations perform better than the two effects would predict on their own? |
+| 4 | Multiple regression | Holding other variables fixed, which variables explain revenue? |
+| 5 | 95% confidence intervals | Is the top-ranked combination clearly ahead? |
 
 In ANOVA and regression, p < 0.05 means a difference is unlikely to be due to chance.
 
@@ -77,7 +77,7 @@ High-Street drew **2.04 times** the footfall of Art/Design District (1,880 vs. 9
 
 ![Footfall, revenue and RPV by location](figures/fig1_location_footfall_revenue.png)
 
-### Price drove revenue
+### High traffic did not mean high revenue
 
 - Price had a strong correlation with revenue (r = 0.726).
 - Price alone explained **53%** of revenue (R² = 0.527). Adding footfall, lease length, event type, location, brand, category, region and season raised this only to 53.6%.
@@ -91,7 +91,7 @@ Flash events (75.3%) and mobile trucks (75.9%) sold more of their stock than mal
 
 ![Sell-through and revenue by event type](figures/fig2_event_type.png)
 
-### No combination was clearly the best
+### The "best combination" ranking was not reliable
 
 The location × event type interaction was not significant (p = 0.097). The top combination had a mean RPV of $14.06, but its 95% confidence interval was wide ($5.82–$22.31) and overlapped with other combinations, so its first place cannot be trusted.
 
@@ -99,14 +99,14 @@ The location × event type interaction was not significant (p = 0.097). The top 
 
 ## 6. From Analysis to Decision
 
-- **Choose locations by cost, not traffic.** Revenue did not differ by location, so lower-rent sites deserve a look before busy ones.
-- **Hit revenue targets through the product mix** (for example, the share of fragrances and serums) rather than through a prime location.
-- **Match the event type to inventory goals.** Flash events and mobile trucks suit selling out limited stock.
+- **Choose locations by cost, not traffic.** Since revenue did not differ by location, lower-rent locations deserve consideration before busy, high-rent ones.
+- **Reach revenue targets through the product mix.** Planning the share of higher-priced products, such as perfumes and serums, matters more than negotiating for a prime location.
+- **Pick the event type based on inventory goals.** When the aim is to sell out limited stock, flash events and mobile pop-up trucks are the better choice.
 
 **Limitations**
-- Revenue is price × units, so price's role is partly built in.
-- The data may be synthetic; the dataset page does not say how it was collected.
-- Rent costs were not available, so profit could not be compared.
+- Revenue is calculated as price × units sold, so a strong link between price and revenue is partly built into the data.
+- No variable in the data explained units sold, and variables other than price explained almost nothing, which suggests the data may be synthetic.
+- Rent and advertising costs were not available, so return on investment by location could not be calculated directly.
 
 ## 7. How to run
 
