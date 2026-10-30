@@ -1,9 +1,9 @@
 # Examining Pop-Up Revenue Drivers through Regression and ANOVA in Python
 
-Do high-traffic locations really bring in more revenue for beauty pop-up stores?
+Do high-traffic locations generate more revenue for beauty pop-up?
 Using 2,133 pop-up events, this project found that **revenue depended on product price, not on location or foot traffic**.
 
-- **Tools:** Python (pandas, SciPy, statsmodels, matplotlib), Tableau
+- **Tools:** Python (pandas, SciPy, statsmodels, matplotlib)
 - **Methods:** correlation, one- and two-way ANOVA, multiple regression, 95% confidence intervals
 - **Portfolio page:** [link]
 - **Tableau dashboard:** [link]
