@@ -1,15 +1,4 @@
-"""
-Global Beauty Pop-up Campaign - Statistical Validation (basic statistics)
 
-Analysis flow
-  STEP 1. Correlation      : Do footfall and revenue move together?
-  STEP 2. One-way ANOVA    : Do means really differ by location and event type?
-  STEP 3. Two-way ANOVA    : Is there a "location x event type" combination effect?
-  STEP 4. Multiple regression : Holding other variables fixed, what drives revenue?
-  STEP 5. Confidence intervals : Can the RPV ranking of combinations be trusted?
-
-Requirements: pip install pandas numpy scipy statsmodels matplotlib
-"""
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
